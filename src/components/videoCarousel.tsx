@@ -58,10 +58,10 @@ const VideoStories = ({ videos }: { videos: string[] }) => {
     }
   }, [currentVideoIndex, videos, playbackCompleted]);
 
- 
+
   return (
     <main>
-      <div className="pages-video-container animate-fade-up animate-once  animate-ease-in  xl:rounded-2xl shadow-2xl h-[95vh] md:h-[90vh]">
+      <div className="pages-video-container animate-fade-up animate-once  animate-ease-in  xl:rounded-2xl shadow-2xl h-[95vh] md:h-[100vh]">
         <video
           autoPlay
           muted
@@ -74,7 +74,7 @@ const VideoStories = ({ videos }: { videos: string[] }) => {
           Your browser does not support the video tag.
         </video>
         <div className="pages-content flex flex-col justify-between h-full">
-          <div className="absolute top-1/2 left-0 transform -translate-y-1/2 text-left mx-8 lg:mx-36 ">
+          <div className="absolute top-1/2 left-0 transform -translate-y-1/2 text-left mx-8 xl:mx-36 ">
             <div className="text-4xl md:text-6xl lg:text-7xl">Nature is you,</div>
             <div className="text-4xl md:text-6xl lg:text-7xl">Discover yourself.</div>
             <div className="flex flex-wrap md:flex-nowrap gap-3 my-6">
@@ -90,13 +90,12 @@ const VideoStories = ({ videos }: { videos: string[] }) => {
                   </div>
                 </div>
               </div>
-              <div className="relative bg-transparent border-white border-2 text-white w-full sm:w-[350px] lg:h-[150px] hover:bg-purple-200 hover:text-black"
-              >
-                <div className="p-2 bg-purple-200 w-[5px] h-[5px]"></div>
+              <div className="relative bg-transparent border-white border-2 text-white w-full sm:w-[350px] lg:h-[150px] hover:bg-green-200 hover:text-black">
+                <div className="p-2 bg-green-700 w-[5px] h-[5px]"></div>
                 <div className=" p-6">
-                  <p className="text-sm font-light">Journey with us.</p>
+                  <p className="text-sm font-light">Discover Your Inner Nature:</p>
                   <div className="flex justify-between mt-8 items-center">
-                    <div>Where You Find Yourself in the Great Outdoors!</div>
+                    <div> Begin Your Quest!</div>
                     <div>
                       <FaArrowRight />
                     </div>
@@ -114,6 +113,7 @@ const VideoStories = ({ videos }: { videos: string[] }) => {
               </div>
             </div>
           </div>
+         
         </div>
       </div>
     </main>
