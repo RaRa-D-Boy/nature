@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Features = () => {
     return (
-        <section className=' w-full  nature-bg-space pt-24 relative '>
+        <section className=' w-full  nature-bg-space pt-24 relative ' id="features">
             <div className="grid lg:grid-cols-2 grid-cols-1 justify-between items-center   lg:pt-8 mx-8 xl:mx-36">
                 <div className='md:text-4xl text-2xl py-2'>
                     Discover<br></br> Yourself in <br></br>Nature's Embrace

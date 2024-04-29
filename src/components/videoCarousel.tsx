@@ -1,7 +1,9 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import { Navbar } from "./navbar";
+import { Navbar } from "./navigation/navbar";
 import { FaArrowRight } from "react-icons/fa6";
+
+
 
 const VideoStories = ({ videos }: { videos: string[] }) => {
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
@@ -60,7 +62,7 @@ const VideoStories = ({ videos }: { videos: string[] }) => {
 
 
   return (
-    <main>
+    <section id="home">
       <div className="pages-video-container relative xl:rounded-2xl shadow-2xl h-[900px] md:h-[700px] lg:h-[100vh]">
         <video
           autoPlay
@@ -116,7 +118,7 @@ const VideoStories = ({ videos }: { videos: string[] }) => {
          
         </div>
       </div>
-    </main>
+    </section>
   );
 };
 
