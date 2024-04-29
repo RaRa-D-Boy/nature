@@ -17,7 +17,7 @@ export const About = () => {
                     </div>
                     <div>
                         <div className='w-full h-[60vh] relative flex justify-start items-start lg:items-center '>
-                            <Image src="/p5.jpg" alt="canopy-walk" layout='fill' objectFit='cover' />
+                            <Image src="https://res.cloudinary.com/denu07mp4/image/upload/v1714392516/p5_qtjnha.jpg" alt="canopy-walk" layout='fill' objectFit='cover' />
                             <div className='absolute bg-black  text-white w-1/2 h-1/3 flex justify-center items-center font-bold text-2xl lg:ml-[-15%] '>[naTure]</div>
                         </div>
                     </div>

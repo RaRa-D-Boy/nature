@@ -6,7 +6,12 @@ import { About } from '../about/about'
 import { Footer } from '../footer/footer'
 
 export const Homepage = () => {
-  const stories = ["/v1.mp4", "/v2.mp4", "/v3.mp4", "/v5.mp4", "/v6.mp4"]
+  const stories = [
+    "https://res.cloudinary.com/denu07mp4/video/upload/v1714390964/v1_lih1oj.mp4",
+    "https://res.cloudinary.com/denu07mp4/video/upload/v1714390791/v5_rqztf8.mp4",
+    "https://res.cloudinary.com/denu07mp4/video/upload/v1714390833/v2_hmgec5.mp4",
+    "https://res.cloudinary.com/denu07mp4/video/upload/v1714390712/v6_sqrhoj.mp4"
+  ]
 
   return (
     <section>
