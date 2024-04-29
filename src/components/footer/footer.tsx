@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Footer = () => {
     return (
-        <section className='h-screen w-full relative'>
+        <section className='h-[800px] w-full relative'>
             <div className='mx-8 xl:mx-36 '>
                 <div className='text-white text-4xl'><div className="w-3 h-3 my-4 bg-green-600"></div>[naTure]</div>
                 <div className='grid md:grid-cols-2 grid-cols-1 my-32'>

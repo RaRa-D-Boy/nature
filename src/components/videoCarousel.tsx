@@ -61,11 +61,11 @@ const VideoStories = ({ videos }: { videos: string[] }) => {
 
   return (
     <main>
-      <div className="pages-video-container animate-fade-up animate-once  animate-ease-in  xl:rounded-2xl shadow-2xl h-[95vh] md:h-[100vh]">
+      <div className="pages-video-container relative xl:rounded-2xl shadow-2xl h-[900px] md:h-[700px] lg:h-[100vh]">
         <video
           autoPlay
           muted
-          className="pages-video-background h-screen w-full object-cover"
+          className="pages-video-background h-[800px] md:h-[700px] lg:h-screen w-full object-cover"
           ref={videoRef}
           key={currentVideoIndex}
           playsInline
@@ -73,8 +73,8 @@ const VideoStories = ({ videos }: { videos: string[] }) => {
           <source src={videos[currentVideoIndex]} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="pages-content flex flex-col justify-between h-full">
-          <div className="absolute top-1/2 left-0 transform -translate-y-1/2 text-left mx-8 xl:mx-36 ">
+        <div className="pages-content flex flex-col h-full">
+          <div className="absolute top-1/2 left-0 transform -translate-y-1/2 text-left mx-8 xl:mx-36 lg:mt-12">
             <div className="text-4xl md:text-6xl lg:text-7xl">Nature is you,</div>
             <div className="text-4xl md:text-6xl lg:text-7xl">Discover yourself.</div>
             <div className="flex flex-wrap md:flex-nowrap gap-3 my-6">

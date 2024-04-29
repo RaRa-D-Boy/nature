@@ -2,9 +2,9 @@ import React from 'react'
 
 export const FeaturesNews = () => {
     return (
-        <section className='relative h-screen w-full'>
+        <section className='relative h-[900px] w-full'>
             <div className="flex flex-wrap mx-8 xl:mx-36 my-16 justify-between" >
-                <div className="mb-8">
+                <div className="mb-16">
                     <p className="text-4xl mb-3">Feature News</p>
                     <button className="py-3 px-8 border-2 border-white">See more</button>
                 </div>
