@@ -7,8 +7,6 @@ import { FaArrowRight } from "react-icons/fa6";
 
 const VideoStories = ({ videos }: { videos: string[] }) => {
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
-  const [mobile,setMobile] = useState(true)
-  const mediaWidth = window.innerWidth 
   const [videoProgress, setVideoProgress] = useState<number[]>(
     videos.map(() => 0)
   );
@@ -16,13 +14,6 @@ const VideoStories = ({ videos }: { videos: string[] }) => {
   const [playbackCompleted, setPlaybackCompleted] = useState(false);
 
   useEffect(() => {
-
-    if(mediaWidth < 500){
-      setMobile(false)
-    }
-    else{
-      setMobile(true)
-    } 
     const handleProgress = () => {
       const currentVideo = videoRef.current;
       if (currentVideo) {
@@ -67,7 +58,7 @@ const VideoStories = ({ videos }: { videos: string[] }) => {
         currentVideo.removeEventListener("play", handleVideoStart);
       };
     }
-  }, [currentVideoIndex, videos, playbackCompleted, mediaWidth]);
+  }, [currentVideoIndex, videos, playbackCompleted]);
 
 
   return (
@@ -77,8 +68,7 @@ const VideoStories = ({ videos }: { videos: string[] }) => {
         data-aos-duration="500"
         data-aos-easing="ease-in-out">
         <video
-          autoPlay={mobile}
-          muted
+          autoPlay
           controls={true}
           className="pages-video-background h-[800px] md:h-[700px] lg:h-screen w-full object-cover"
           ref={videoRef}
