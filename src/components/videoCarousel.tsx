@@ -67,7 +67,7 @@ const VideoStories = ({ videos }: { videos: string[] }) => {
         currentVideo.removeEventListener("play", handleVideoStart);
       };
     }
-  }, [currentVideoIndex, videos, playbackCompleted]);
+  }, [currentVideoIndex, videos, playbackCompleted, mediaWidth]);
 
 
   return (
