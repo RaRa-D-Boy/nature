@@ -9,7 +9,6 @@ const VideoStories = ({ videos }: { videos: string[] }) => {
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
   const [mobile,setMobile] = useState(true)
   const mediaWidth = window.innerWidth 
-  console.log("mediaWidth", mediaWidth)
   const [videoProgress, setVideoProgress] = useState<number[]>(
     videos.map(() => 0)
   );
@@ -18,7 +17,7 @@ const VideoStories = ({ videos }: { videos: string[] }) => {
 
   useEffect(() => {
 
-    if(window.innerWidth < 500){
+    if(mediaWidth < 500){
       setMobile(false)
     }
     else{
