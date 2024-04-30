@@ -4,7 +4,6 @@ import { Features } from '../features/features'
 import { FeaturesNews } from '../features/featureNews'
 import { About } from '../about/about'
 import { Footer } from '../footer/footer'
-import { NavItem } from '../navigation/navItem'
 
 export const Homepage = () => {
   const stories = [

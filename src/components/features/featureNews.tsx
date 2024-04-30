@@ -2,7 +2,9 @@ import React from 'react'
 
 export const FeaturesNews = () => {
     return (
-        <section className='relative h-[900px] w-full'>
+        <section className='relative h-[900px] w-full' data-aos="fade-up" data-aos-delay="300"
+        data-aos-duration="2000"
+        data-aos-easing="ease-in-out">
             <div className="flex flex-wrap mx-8 xl:mx-36 my-16 justify-between" >
                 <div className="mb-16">
                     <p className="text-4xl mb-3">Feature News</p>
@@ -34,7 +36,10 @@ export const FeaturesNews = () => {
                     </div>
                 </div>
             </div>
-            <div className="absolute bottom-0 left-0 right-0 flex flex-wrap mx-8 xl:mx-36 border-t items-center justify-between border-neutral-800 py-8">
+            <div className="absolute bottom-0 left-0 right-0 flex flex-wrap mx-8 xl:mx-36 border-t items-center justify-between border-neutral-800 py-8" 
+            data-aos="fade-up" data-aos-delay="150"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out">
                 <div>
                     <span className="bg-purple-200  me-3 my-2 px-1">.</span><span>Who we are </span>
                 </div>
