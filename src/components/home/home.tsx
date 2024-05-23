@@ -4,6 +4,7 @@ import { Features } from '../features/features'
 import { FeaturesNews } from '../features/featureNews'
 import { About } from '../about/about'
 import { Footer } from '../footer/footer'
+import { Navbar } from '../navigation/navbar'
 
 export const Homepage = () => {
   const stories = [
@@ -15,6 +16,7 @@ export const Homepage = () => {
 
   return (
     <section className='relative'>
+      <Navbar/>
       <VideoStories videos={stories} />
       <FeaturesNews />
       <Features />

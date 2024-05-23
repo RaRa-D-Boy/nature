@@ -14,8 +14,8 @@ export const Navbar = () => {
   }
 
   return (
-    <>
-      <nav className=" border-b relative fixed "
+    <div className='nav'>
+      <nav className="  relative glass-background"
         data-aos="fade-left" data-aos-delay="10"
         data-aos-duration="500"
         data-aos-easing="ease-in-out">
@@ -38,7 +38,7 @@ export const Navbar = () => {
         </div>
         {showNav ? <NavItem bool={showNav} /> : ""}
       </nav>
-    </>
+    </div>
 
   )
 }

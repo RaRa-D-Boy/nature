@@ -69,7 +69,8 @@ const VideoStories = ({ videos }: { videos: string[] }) => {
         data-aos-easing="ease-in-out">
         <video
           autoPlay
-          controls={true}
+          muted
+          controls={false}
           className="pages-video-background h-[800px] md:h-[700px] lg:h-screen w-full object-cover"
           ref={videoRef}
           key={currentVideoIndex}
@@ -119,7 +120,7 @@ const VideoStories = ({ videos }: { videos: string[] }) => {
               </div>
             </div>
           </div>
-          <div className="absolute top-0 left-0  w-full">
+          {/* <div className="absolute top-0 left-0  w-full">
             <div className="w-full">
               <div className="h-1 rounded-full">
                 <div>
@@ -127,7 +128,7 @@ const VideoStories = ({ videos }: { videos: string[] }) => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
         </div>
       </div>

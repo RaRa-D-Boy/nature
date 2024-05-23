@@ -12,7 +12,7 @@ export const NavItem = ({ bool }: any) => {
     }
 
     return (
-        <section className={hideNav ? 'block absolute fixed w-full z-10 top-0 nav  ' : "hidden"} data-aos="slide-down" data-aos-delay="50"
+        <section className={hideNav ? ' fixed w-full top-0 nav over-hidden' : "hidden"} data-aos="slide-down" data-aos-delay="50"
             data-aos-duration="700"
             data-aos-easing="ease-in-out">
             <div className='bg-black  text-white w-full h-screen '>
